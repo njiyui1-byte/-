@@ -1,0 +1,6 @@
+{
+  "name": "여성시대 프리미엄",
+  "description": "최고의 럭셔리 호스트바 공식 프리미엄 예약 및 홍보 플랫폼. 고해상도 호스트 프로필, 실시간 간편 예약 문의, 안전 공지 및 이벤트 게시판, 그리고 완전한 기능을 제공하는 CMS 관리자 대시보드가 갖춰져 있습니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

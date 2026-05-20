@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-brand-purple: #a855f7;
+  --color-brand-purple-glow: #c084fc;
+  --color-brand-dark: #000000;
+  --color-brand-card: #0a0512;
+  --color-brand-gold: #d4af37;
+}
+
+/* Custom CSS utilities for luxurious VIP branding */
+@layer utilities {
+  .text-glow-purple {
+    text-shadow: 0 0 8px rgba(168, 85, 247, 0.6), 0 0 20px rgba(168, 85, 247, 0.3);
+  }
+  
+  .text-glow-gold {
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6), 0 0 20px rgba(212, 175, 55, 0.3);
+  }
+
+  .shadow-neon-purple {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(168, 85, 247, 0.1);
+  }
+
+  .shadow-neon-purple-hover {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.5), inset 0 0 10px rgba(168, 85, 247, 0.2);
+  }
+
+  .border-purple-glow {
+    border-color: rgba(168, 85, 247, 0.3);
+  }
+
+  .bg-radial-luxury {
+    background: radial-gradient(circle at top, #130a21 0%, #000000 80%);
+  }
+  
+  .bg-radial-card {
+    background: radial-gradient(110% 110% at top left, #12091f 0%, #050209 100%);
+  }
+}
+
+/* Base resets & premium global styling */
+body {
+  background-color: #000000;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom VIP glowing scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020104;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b1d5a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+/* Animated glass backdrop */
+.backdrop-glass {
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.75);
+}
